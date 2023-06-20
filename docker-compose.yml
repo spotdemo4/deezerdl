@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  deezerdl:
+    build:
+      context: .
+    container_name: deezerdl
+    restart: unless-stopped
+    environment:
+      DL_LOCATION: '/downloads'
+      ACCESS_TOKEN: ${ACCESS_TOKEN}
+    volumes:
+      - ${DL_LOCATION}:/downloads
