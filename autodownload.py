@@ -21,4 +21,4 @@ while True:
         client.get_playlist(int(os.environ.get("PLAYLIST_ID"))).delete_tracks([track])
     
     print("Sleeping for 1 hour...")
-    time.sleep(60)
+    time.sleep(3600)
