@@ -10,5 +10,6 @@ services:
       DL_LOCATION: '/downloads'
       ACCESS_TOKEN: ${ACCESS_TOKEN}
       PLAYLIST_ID: ${PLAYLIST_ID}
+      YT_PLAYLIST_ID: ${YT_PLAYLIST_ID}
     volumes:
       - ${DL_LOCATION}:/downloads
